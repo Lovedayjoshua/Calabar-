@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090807">
+<title>Work with us — Calabar Fringe Festival 2026</title>
+<style>
+:root{--ink:#090807;--red:#f02d2d;--cream:#f5e4cb;--muted:#c9bfb2;--gold:#d9a64d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:#fff;font-family:Inter,Arial,Helvetica,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.16;background-image:radial-gradient(#fff 0.6px,transparent .8px);background-size:7px 7px;mask-image:linear-gradient(90deg,#000,transparent 34%,transparent 66%,#000);z-index:0}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92vw);margin:auto;position:relative;z-index:1}
+header{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff20;position:relative;z-index:5;background:#090807d9;backdrop-filter:blur(12px)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.12em}.brand-mark{width:35px;height:35px;border:2px solid var(--red);transform:rotate(45deg);display:grid;place-items:center;color:var(--cream);font-size:12px}.brand-mark span{transform:rotate(-45deg)}.brand small{display:block;font-size:9px;color:var(--red);letter-spacing:.28em;margin-top:3px}
+nav{display:flex;align-items:center;gap:24px;font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:#e6ded5}nav a:hover{color:var(--red)}.nav-cta{padding:12px 16px;border:1px solid var(--red);color:#fff}
+.menu{display:none;background:none;color:white;border:1px solid #ffffff44;padding:9px 11px}
+.hero{min-height:calc(100vh - 82px);display:grid;place-items:center;text-align:center;padding:72px 0 80px;position:relative;isolation:isolate}
+.hero:before,.hero:after{content:"";position:absolute;z-index:-1;pointer-events:none}.hero:before{width:55vw;height:55vw;max-width:720px;max-height:720px;border:1px solid #f02d2d38;border-radius:50%;left:50%;top:48%;transform:translate(-50%,-50%);box-shadow:0 0 0 38px #f02d2d08,0 0 0 90px #f02d2d05}.hero:after{inset:0;background:linear-gradient(135deg,transparent 0 20%,#e52a2a12 20.2%,transparent 21%),linear-gradient(315deg,transparent 0 16%,#f3dec312 16.2%,transparent 17%);opacity:.65}
+.kicker{display:flex;align-items:center;justify-content:center;gap:15px;color:var(--cream);font-size:11px;letter-spacing:.42em;text-transform:uppercase;animation:fadeUp .8s both}.kicker:before,.kicker:after{content:"";width:54px;height:1px;background:var(--red)}
+.logos{display:flex;justify-content:center;align-items:center;gap:26px;margin:25px 0 30px;flex-wrap:wrap}.festival-logo{font-weight:1000;line-height:.82;letter-spacing:-.06em;font-size:clamp(24px,4vw,42px);text-transform:uppercase;text-shadow:2px 2px 0 #6b1212}.festival-logo span{display:block;color:var(--red);font-size:.68em;letter-spacing:.12em;margin-top:9px}.logo-divider{height:48px;width:1px;background:#ffffff38}.partner{font-size:13px;letter-spacing:.22em;text-align:left;color:var(--gold);font-weight:800}.partner b{display:block;font-size:22px;letter-spacing:.12em}.partner small{display:block;font-size:9px;letter-spacing:.3em;margin-top:5px}
+h1{font-size:clamp(58px,12vw,148px);line-height:.82;letter-spacing:-.075em;margin:0;text-transform:uppercase;font-weight:1000;animation:heroIn 1s cubic-bezier(.2,.8,.2,1) both}.h1-light{color:var(--cream);display:block;text-shadow:0 4px 0 #7b5d4b55}.h1-red{color:var(--red);display:block;position:relative;text-shadow:3px 4px 0 #5d1010}.h1-red:after{content:"";display:block;width:min(380px,70%);height:6px;background:var(--red);margin:15px auto 0;transform:skewX(-28deg);animation:underline 1.2s .7s both}
+.subline{font-size:clamp(11px,1.7vw,16px);letter-spacing:.28em;text-transform:uppercase;color:#fff;margin:27px 0 14px}.theme{font-size:13px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}.theme strong{color:var(--red);font-weight:900}
+.date-chip{margin:30px auto 0;display:inline-flex;align-items:center;gap:13px;border:1px solid #f02d2d75;padding:12px 18px;background:#f02d2d10;color:var(--cream);font-size:12px;letter-spacing:.16em;text-transform:uppercase;animation:pulse 2.6s infinite}.date-chip i{width:7px;height:7px;background:var(--red);border-radius:50%;box-shadow:0 0 0 5px #f02d2d20}
+.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:29px}.btn{display:inline-flex;justify-content:center;align-items:center;gap:10px;padding:15px 20px;font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;transition:.25s;border:1px solid #ffffff3b}.btn-primary{background:var(--red);border-color:var(--red)}.btn:hover{transform:translateY(-3px);box-shadow:0 10px 30px #f02d2d22}.btn-ghost:hover{border-color:var(--red);color:var(--cream)}
+section{padding:95px 0;position:relative;z-index:1}.section-label{color:var(--red);font-size:11px;letter-spacing:.3em;text-transform:uppercase;font-weight:900}.section-title{font-size:clamp(34px,6vw,68px);line-height:.98;letter-spacing:-.055em;text-transform:uppercase;margin:15px 0 20px}.section-title span{color:var(--red)}.intro{max-width:650px;color:var(--muted);line-height:1.8;font-size:15px}
+.call-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:35px}.call-card{border:1px solid #ffffff20;padding:27px;background:linear-gradient(145deg,#ffffff08,transparent 70%);min-height:260px;position:relative;overflow:hidden;transition:.3s}.call-card:before{content:attr(data-number);position:absolute;right:8px;top:-14px;font-size:100px;font-weight:1000;color:#ffffff08;line-height:1}.call-card:hover{border-color:#f02d2d99;transform:translateY(-5px)}.card-icon{width:42px;height:42px;display:grid;place-items:center;border:1px solid #f02d2d99;color:var(--red);font-size:21px;margin-bottom:25px}.call-card h3{font-size:22px;text-transform:uppercase;margin:0 0 12px;letter-spacing:-.03em}.call-card p{font-size:13px;line-height:1.7;color:var(--muted);min-height:45px}.text-link{display:inline-block;margin-top:13px;color:var(--red);font-size:11px;font-weight:900;letter-spacing:.13em;text-transform:uppercase;border-bottom:1px solid #f02d2d70;padding-bottom:5px}
+.pillars{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #ffffff20;border-bottom:1px solid #ffffff20;margin-top:35px}.pillar{padding:26px 20px;border-right:1px solid #ffffff20}.pillar:last-child{border:0}.pillar .sym{font-size:28px;color:var(--red)}.pillar h3{font-size:13px;text-transform:uppercase;letter-spacing:.08em}.pillar p{font-size:12px;color:var(--muted);line-height:1.6}
+.open-call{background:linear-gradient(120deg,#f02d2d12,transparent 65%);border-top:1px solid #ffffff18;border-bottom:1px solid #ffffff18}.open-inner{display:flex;justify-content:space-between;align-items:center;gap:35px}.open-inner .section-title{max-width:650px}.deadline{flex:0 0 230px;border-left:2px solid var(--red);padding:14px 0 14px 22px}.deadline small{display:block;color:var(--muted);letter-spacing:.18em;text-transform:uppercase;font-size:10px}.deadline strong{display:block;color:var(--cream);font-size:24px;margin-top:10px}
+footer{padding:35px 0;border-top:1px solid #ffffff20;color:var(--muted);font-size:11px;letter-spacing:.08em}.foot-row{display:flex;justify-content:space-between;gap:20px;align-items:center}.foot-row strong{color:#fff}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}
+@keyframes heroIn{from{opacity:0;transform:translateY(28px) scale(.98);filter:blur(5px)}to{opacity:1;transform:none;filter:blur(0)}}@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}@keyframes underline{from{width:0;opacity:0}to{width:min(380px,70%);opacity:1}}@keyframes pulse{0%,100%{box-shadow:0 0 0 0 #f02d2d00}50%{box-shadow:0 0 0 8px #f02d2d08}}
+@media(max-width:760px){header{height:70px}.menu{display:block}nav{display:none;position:absolute;top:69px;left:0;right:0;padding:22px;background:#090807f7;flex-direction:column;align-items:stretch;gap:20px;border-bottom:1px solid #ffffff25}nav.open{display:flex}.hero{min-height:calc(100vh - 70px);padding:55px 0}.logos{gap:14px}.logo-divider{height:35px}.partner b{font-size:17px}.partner{font-size:10px}.call-grid{grid-template-columns:1fr}.call-card{min-height:0}.pillars{grid-template-columns:repeat(2,1fr)}.pillar:nth-child(2){border-right:0}.pillar:nth-child(-n+2){border-bottom:1px solid #ffffff20}.open-inner{display:block}.deadline{margin-top:28px}.foot-row{align-items:flex-start;flex-direction:column}section{padding:70px 0}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+
+.form-page{min-height:calc(100vh - 82px);display:grid;place-items:center;padding:70px 0}
+.form-box{width:min(560px,92vw);border:1px solid #ffffff20;padding:38px;background:linear-gradient(145deg,#ffffff08,transparent 70%);position:relative;z-index:1}
+.form-box .section-title{font-size:clamp(30px,6vw,48px);margin:12px 0 14px}
+.field{margin-top:20px}.field label{display:block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--cream);margin-bottom:9px;font-weight:800}
+.field input,.field textarea{width:100%;background:#ffffff0a;border:1px solid #ffffff30;color:#fff;padding:14px 15px;font:inherit;font-size:15px;outline:none;transition:.25s}
+.field input:focus,.field textarea:focus{border-color:var(--red);background:#f02d2d10}
+.field textarea{min-height:100px;resize:vertical}
+.hp{position:absolute;left:-9999px;opacity:0}
+.form-box .btn{width:100%;margin-top:26px;cursor:pointer;color:#fff;font-family:inherit}
+.form-box .btn[disabled]{opacity:.6;cursor:wait}
+.msg{margin-top:18px;font-size:13px;line-height:1.6;display:none;padding:13px 15px;border-left:2px solid var(--red);background:#f02d2d10;color:var(--cream)}
+.back{display:inline-block;margin-top:22px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}.back:hover{color:var(--red)}
+</style>
+</head>
+<body>
+<header><div class="wrap" style="display:flex;align-items:center;justify-content:space-between;width:min(1160px,92vw)">
+<a class="brand" href="index.html" aria-label="Calabar Fringe home"><span class="brand-mark"><span>CF</span></span><span>CALABAR FRINGE<small>FESTIVAL 2026</small></span></a>
+<nav id="nav"><a class="nav-cta" href="index.html#opportunities">← Back to site</a></nav>
+</div></header>
+<main class="form-page"><div class="form-box">
+<div class="section-label" id="roleLabel">Work with us</div>
+<h2 class="section-title" id="roleTitle">Join as a<br><span>partner.</span></h2>
+<p class="intro" id="roleIntro" style="font-size:14px">Share your details and the festival team will get in touch.</p>
+<form id="form" novalidate>
+<input type="hidden" name="role" id="role" value="partner">
+<input class="hp" type="text" name="company_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div class="field"><label for="name">Full name</label><input id="name" name="name" type="text" required autocomplete="name" placeholder="Your full name"></div>
+<div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com"></div>
+<div class="field"><label for="address">Address</label><textarea id="address" name="address" required autocomplete="street-address" placeholder="Your address"></textarea></div>
+<button class="btn btn-primary" type="submit" id="submit">Submit ↗</button>
+<div class="msg" id="msg" role="status"></div>
+</form>
+<a class="back" href="index.html#opportunities">← Back to Get Involved</a>
+</div></main>
+<script>
+// PASTE your Google Apps Script Web App URL here (see SETUP-GOOGLE-SHEET.md)
+const SCRIPT_URL = "PASTE_YOUR_WEB_APP_URL_HERE";
+
+const roles={
+  vendor:{label:"Call for vendors",title:"Become a<br><span>vendor.</span>",intro:"Showcase your food, products, crafts or creative business. Share your details and we'll be in touch."},
+  volunteer:{label:"Call for volunteers",title:"Volunteer<br><span>with us.</span>",intro:"Help welcome guests, support production and keep the festival moving. Share your details and we'll be in touch."}
+};
+const r=new URLSearchParams(location.search).get('role');
+if(roles[r]){
+  document.getElementById('role').value=r;
+  document.getElementById('roleLabel').textContent=roles[r].label;
+  document.getElementById('roleTitle').innerHTML=roles[r].title;
+  document.getElementById('roleIntro').textContent=roles[r].intro;
+  document.title=roles[r].label+" — Calabar Fringe Festival 2026";
+}
+const form=document.getElementById('form'),msg=document.getElementById('msg'),btn=document.getElementById('submit');
+function show(t){msg.textContent=t;msg.style.display='block'}
+form.addEventListener('submit',async e=>{
+  e.preventDefault();
+  const d=new FormData(form);
+  if(d.get('company_website')) return; // bot trap
+  const name=d.get('name').trim(),email=d.get('email').trim(),address=d.get('address').trim();
+  if(!name||!email||!address) return show('Please fill in your name, email and address.');
+  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return show('Please enter a valid email address.');
+  if(SCRIPT_URL.startsWith('PASTE')) return show('Form is not connected yet. Please add the Google Apps Script URL.');
+  btn.disabled=true;btn.textContent='Sending…';
+  try{
+    await fetch(SCRIPT_URL,{method:'POST',mode:'no-cors',body:new URLSearchParams({role:d.get('role'),name,email,address})});
+    form.reset();btn.textContent='Submitted ✓';
+    show('Thank you! Your details have been received. The festival team will be in touch.');
+  }catch(err){
+    btn.disabled=false;btn.textContent='Submit ↗';
+    show('Something went wrong. Please try again or email movievillageng@gmail.com.');
+  }
+});
+</script>
+</body></html>
